@@ -1,0 +1,5 @@
+[
+  { "repo": "chrisgrulau/jellyfin-ingest", "asset": "jellyfin-plugin-ingest.zip", "image": "assets/shoal-ingest.png" },
+  { "repo": "chrisgrulau/jellyfin-subtitles", "asset": "jellyfin-plugin-subtitles.zip", "image": "assets/shoal-subtitles.png" },
+  { "repo": "chrisgrulau/jellyfin-ai", "asset": "jellyfin-plugin-ai.zip", "image": "assets/shoal-ai.png" }
+]
