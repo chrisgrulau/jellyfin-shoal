@@ -25,8 +25,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.6.0-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.7.0-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.7.0.0",
+        "changelog": "0.7.0-alpha: hard link or copy per watch folder, so torrents keep seeding (moved stays the default); Ingest remembers what it filed from there. Subtitle language tags in every ISO 639 language are recognised when filing, and unknown tags are kept rather than dropped.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.7.0-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "c0fdc0dde67a99bffc7a1b29631619cb",
+        "timestamp": "2026-09-26T10:00:22Z"
+      },
       {
         "version": "0.6.0.0",
         "changelog": "0.6.0-alpha: releases needing a decision, failures, filings and quarantines also go to Jellyfin's Activity log, and Shoal Ingest is in the dashboard menu. Non-English metadata: English release names now match titles listed in the server's language. The library picked on a review card survives the refresh; missing watch folders are reported once; network (UNC) paths are accepted.",
@@ -108,8 +116,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.8.0-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.9.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.9.0.0",
+        "changelog": "0.9.0-alpha: languages are recognised from a built-in ISO 639 table, so the plugin works on servers without full language data. Subtitle languages accept codes or names (eng, fr, German); entries that aren't languages are noted in the log.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.9.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "c6641d4f13d4a62ca0f02785ae3352a0",
+        "timestamp": "2026-09-26T10:02:16Z"
+      },
       {
         "version": "0.8.0.0",
         "changelog": "0.8.0-alpha: review in the results list: waiting items first, a filter and search, Decline, and Check again / Search again. Unclear results are checked again once speech-to-text changes; a new install waits until its settings are saved once. Subtitles waiting for review, added, or in folders that can't be written, and stopped searches, also go to Jellyfin's Activity log.",
