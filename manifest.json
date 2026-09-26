@@ -148,8 +148,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.11.0-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.12.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.12.0.0",
+        "changelog": "0.12.0-alpha: the built-in speech-to-text downloads in the background with progress, and Test no longer waits for it; Test uses the page's unsaved spending limits; rewritten subtitles keep their group on Linux; provider errors quote the provider's own reply.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.12.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "05dff203b5f61caadb415bc4bea12f1f",
+        "timestamp": "2026-09-26T13:23:39Z"
+      },
       {
         "version": "0.11.0.0",
         "changelog": "0.11.0-alpha: SubDL, Deepgram and speech-to-text calls go through the shared provider HTTP (capped, keys redacted, Retry-After kept); the find run stops on a provider limit or sign-in failure; one library walk and one run start; embedded tracks are checked when the only file beside the video is forced or picture-based.",
