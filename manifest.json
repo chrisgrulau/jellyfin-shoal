@@ -25,8 +25,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.4.0-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.5.0-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.5.0.0",
+        "changelog": "0.5.0-alpha: choose file by file in review. For a release with several files waiting, each file can replace its copies on the server, be quarantined (with its subtitles) instead of filed, or wait; the rest of the release is filed as usual. Replace existing copies and Quarantine release still act on the whole release.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.5.0-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "374626b90539aea4a0710a362cdb6e34",
+        "timestamp": "2026-09-26T08:28:23Z"
+      },
       {
         "version": "0.4.0.0",
         "changelog": "0.4.0-alpha: Replace existing copies in review. A release held back because its episodes or films are already on the server (a better-quality copy, say) can replace them: the old copies and their subtitle files move to quarantine, restorable until it is purged, and the new files are filed in their place, all-or-nothing. Also: AI questions in any script fit its limit, the quarantine purge carries on past a stuck file, and non-ASCII digits in names no longer throw.",
@@ -108,8 +116,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.6.1-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.7.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.7.0.0",
+        "changelog": "0.7.0-alpha: subtitle editor. Edit on a result opens the subtitle's lines: change text and times, add, delete and shift lines, find by text, and play any line's audio; Undo brings the original back. The built-in speech-to-text now installs under Jellyfin's data folder (on Windows it showed up as a broken plugin).",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.7.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "4e93d54a23fd3a5f62e13a0f07572802",
+        "timestamp": "2026-09-26T08:29:56Z"
+      },
       {
         "version": "0.6.1.0",
         "changelog": "0.6.1-alpha: fixes. Subtitles in legacy encodings (Cyrillic, Central European, Greek, Turkish, Hebrew, Arabic, CJK) are written back in their own encoding instead of being garbled. An unreadable results file is never overwritten; folders that can't be written are detected before any download or check and not redone every night; one odd file can't stop the nightly run; ffmpeg found through PATH works; timings matched by meaning wait for review.",
