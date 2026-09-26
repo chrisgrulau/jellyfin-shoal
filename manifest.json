@@ -6,8 +6,16 @@
     "overview": "Optional, budget-controlled AI help for the Ingest and Subtitles plugins.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.2.0-alpha/assets/shoal-ai.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.3.0-alpha/assets/shoal-ai.png",
     "versions": [
+      {
+        "version": "0.3.0.0",
+        "changelog": "0.3.0-alpha: paid calls and spending use the shared metering and spending store; unsupported currency codes read as USD; the currency list comes from the server.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ai/releases/download/v0.3.0-alpha/jellyfin-plugin-ai.zip",
+        "checksum": "acae831e85ea8dcb1471830a28fe4bb7",
+        "timestamp": "2026-09-26T11:58:22Z"
+      },
       {
         "version": "0.2.0.0",
         "changelog": "0.2.0-alpha: text in any script reaches the model as written; exchange rates refresh when other plugins ask; clearer failure reasons for Ingest and Subtitles; replies that were billed but unusable are counted in spending; providers not available yet are shown as coming later.",
@@ -33,8 +41,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.8.0-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.9.0-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.9.0.0",
+        "changelog": "0.9.0-alpha: state and search cache saved through the shared JSON store (flushed before replacing); the service is split into folder policy, start-up maintenance, quarantine and activity reporting, with no change in behaviour.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.9.0-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "f3656ed91fb17e4ebd36c3ba81f7a320",
+        "timestamp": "2026-09-26T11:59:42Z"
+      },
       {
         "version": "0.8.0.0",
         "changelog": "0.8.0-alpha: dry run per watch folder (on for new folders); a Waiting list with Process now; season and episode per video in review; theme-aware, more accessible settings page.",
@@ -132,8 +148,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.10.0-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.11.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.11.0.0",
+        "changelog": "0.11.0-alpha: SubDL, Deepgram and speech-to-text calls go through the shared provider HTTP (capped, keys redacted, Retry-After kept); the find run stops on a provider limit or sign-in failure; one library walk and one run start; embedded tracks are checked when the only file beside the video is forced or picture-based.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.11.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "dcfebb03498e064c1e016a30e7d15de4",
+        "timestamp": "2026-09-26T12:00:58Z"
+      },
       {
         "version": "0.10.0.0",
         "changelog": "0.10.0-alpha: built-in Whisper checks the system before downloading and gives up on stalled downloads; container- aware local service search; rewritten subtitles keep their file mode; nothing-found is not recorded when no provider answered; results saved in batches; settings that do nothing yet are marked coming later; page errors and accessibility.",
