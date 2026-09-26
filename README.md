@@ -7,7 +7,7 @@ from **Dashboard → Plugins**, with their icons and changelogs.
 | --- | --- |
 | [Shoal Ingest](https://github.com/chrisgrulau/jellyfin-ingest) | Watches drop folders and files new media into your libraries, correctly named. |
 | [Shoal Subtitles](https://github.com/chrisgrulau/jellyfin-subtitles) | Checks, synchronises and finds subtitles so they match the audio. |
-| [Shoal AI](https://github.com/chrisgrulau/jellyfin-ai) | Shared AI provider settings and budgets for the other Shoal plugins (listed once it has a release). |
+| [Shoal AI](https://github.com/chrisgrulau/jellyfin-ai) | Optional AI help for the other Shoal plugins, within spending limits you set. |
 
 All of them are **alpha** and need Jellyfin **12.1** or newer.
 
