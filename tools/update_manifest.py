@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds manifest.json, the Jellyfin plugin repository for the Shoal plugins, from their GitHub releases.
 
-Only releases that are published, immutable and carry SHA256SUMS are listed. Each zip is downloaded and checked
+Only releases that are published, immutable, carry SHA256SUMS and have a build-provenance attestation are listed. Each zip is downloaded and checked
 against SHA256SUMS before its MD5 (what Jellyfin checks on install) goes into the manifest. Plugin details and the
 changelog come from build.yaml at the release's tag, and the version there must match the tag.
 
@@ -12,6 +12,7 @@ Standard library only. Set GITHUB_TOKEN to avoid the API's anonymous rate limit.
 """
 
 import argparse
+import base64
 import hashlib
 import json
 import os
@@ -40,6 +41,25 @@ def fetch(url, api=False):
     if len(data) > MAX_ZIP_BYTES:
         raise ValueError(f"{url} is larger than {MAX_ZIP_BYTES} bytes")
     return data
+
+
+def has_build_provenance(repo, digest):
+    """Whether GitHub holds a SLSA build-provenance attestation for this file in the repository."""
+    try:
+        listed = json.loads(fetch(f"https://api.github.com/repos/{repo}/attestations/sha256:{digest}", api=True))
+    except urllib.error.HTTPError as error:
+        if error.code == 404:
+            return False
+        raise
+    for item in listed.get("attestations", []):
+        envelope = (item.get("bundle") or {}).get("dsseEnvelope") or {}
+        try:
+            statement = json.loads(base64.b64decode(envelope.get("payload", "")))
+        except ValueError:
+            continue
+        if str(statement.get("predicateType", "")).startswith("https://slsa.dev/provenance/"):
+            return True
+    return False
 
 
 def raw(repo, ref, path):
@@ -103,8 +123,13 @@ def versions_of(plugin):
             if len(parts) == 2:
                 sums[parts[1].lstrip("*")] = parts[0].lower()
         data = fetch(names[asset])
-        if sums.get(asset) != hashlib.sha256(data).hexdigest():
+        digest = hashlib.sha256(data).hexdigest()
+        if sums.get(asset) != digest:
             raise ValueError(f"{repo} {tag}: {asset} doesn't match SHA256SUMS")
+
+        # Only zips built by the plugin's CI (a build-provenance attestation, not just the release's own) are listed
+        if not has_build_provenance(repo, digest):
+            continue
 
         found.append((tuple(int(x) for x in m.groups()), tag, meta, {
             "version": version,
