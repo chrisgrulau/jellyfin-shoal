@@ -90,22 +90,6 @@
         "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.1.6-alpha/jellyfin-plugin-ingest.zip",
         "checksum": "edb36c9bd912c3424180481d0f4da00a",
         "timestamp": "2026-09-25T14:00:27Z"
-      },
-      {
-        "version": "0.1.5.0",
-        "changelog": "0.1.5-alpha: an offline library share is never recreated on the local disk (the release waits and retries); a provider outage is retried automatically and pauses identification instead of stranding releases in review; searches are cached; titles in any script match; decisions made during planning are kept; safer file names; only the folders filed into are refreshed; state-file errors are handled; quieter, more private logs and a trimmed action log.",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.1.5-alpha/jellyfin-plugin-ingest.zip",
-        "checksum": "1e728eb9b48f4bd481cbe32c9a921bdd",
-        "timestamp": "2026-09-25T09:24:22Z"
-      },
-      {
-        "version": "0.1.4.0",
-        "changelog": "0.1.4-alpha: safety release. Symbolic links are never followed; provider ids are validated and every move is checked to stay inside its library or the quarantine; unsafe watch and quarantine folders are refused, and the purge only deletes folders Ingest created; downloads still being written are not mistaken for finished ones; moves are crash-safe and all-or-nothing; one unreadable folder no longer stops the others.",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.1.4-alpha/jellyfin-plugin-ingest.zip",
-        "checksum": "b4fddb590920a4a1eefd7c39fb90529b",
-        "timestamp": "2026-09-25T07:30:48Z"
       }
     ]
   },
