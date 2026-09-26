@@ -57,8 +57,24 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.2.0-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.4.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.4.0.0",
+        "changelog": "0.4.0-alpha: completes the first stage. SubDL as an extra subtitle source (with a free key; the right episode is taken from season packs). Opt-in checking of subtitle tracks inside video files (a corrected copy is added beside the video when a track is out of time). Deepgram credit balance on the settings page, with a guard that swaps an Admin key for a transcription-only key. A helper that finds a local speech-to-text service or shows how to run one.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.4.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "8af3f23f1743cd7d33cecafbb10536a0",
+        "timestamp": "2026-09-26T03:34:22Z"
+      },
+      {
+        "version": "0.3.0.0",
+        "changelog": "0.3.0-alpha: paid speech-to-text (Deepgram, OpenAI) can be used by the nightly runs within your monthly limit, in your currency. Every call is priced from the providers' published prices, reserved against the limit and recorded; a call that would go over the limit, or whose cost can't be worked out, isn't made. The settings page shows this month's spending.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.3.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "8ab258a4a1c152ff2d5c615cb6e36b7b",
+        "timestamp": "2026-09-26T02:50:53Z"
+      },
       {
         "version": "0.2.0.0",
         "changelog": "0.2.0-alpha: built-in speech-to-text. Once you allow it, whisper.cpp and a speech model are downloaded from this project's releases, checked against checksums built into the plugin, and run on the server's CPU. Also: undo is safe after another tool replaces a subtitle, large libraries are checked once each, downloads and huge files are capped, Apply/Undo errors are shown, downloads default to 10 a day and stop when the provider's allowance is used up, and forced-only tracks no longer count as having subtitles.",
