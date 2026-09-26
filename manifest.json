@@ -25,8 +25,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.1.8-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.2.0-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.2.0.0",
+        "changelog": "0.2.0-alpha: optional AI tie-breaker. With the Shoal AI plugin installed and allowing Ingest, a close call between candidates Ingest already found is settled by the AI choosing one of them (or none), sending only file names, titles and years. Every choice is shown in Recent activity; anything else still waits for review.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.2.0-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "7ef4cd64a0dcb316ff5be439ded53fd7",
+        "timestamp": "2026-09-26T04:55:09Z"
+      },
       {
         "version": "0.1.8.0",
         "changelog": "0.1.8-alpha: review fixes. Libraries on a whole drive can be filed into; Jellyfin's metadata and transcode folders are protected; folder links and unreadable releases are handled. Quarantine never touches date folders Ingest didn't create, and \"Quarantine release\" is crash-safe and logged. Recovery only touches Ingest's own temporary files, a full disk after a move no longer splits a release, a hung network share can't stall filing, and choices on the review screen are checked against what the page showed.",
