@@ -57,8 +57,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.1.0-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.2.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.2.0.0",
+        "changelog": "0.2.0-alpha: built-in speech-to-text. Once you allow it, whisper.cpp and a speech model are downloaded from this project's releases, checked against checksums built into the plugin, and run on the server's CPU. Also: undo is safe after another tool replaces a subtitle, large libraries are checked once each, downloads and huge files are capped, Apply/Undo errors are shown, downloads default to 10 a day and stop when the provider's allowance is used up, and forced-only tracks no longer count as having subtitles.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.2.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "bfd37e29fd782626cf62e57591cfb606",
+        "timestamp": "2026-09-26T01:36:24Z"
+      },
       {
         "version": "0.1.0.0",
         "changelog": "0.1.0-alpha, the first release: checks subtitle files beside films and episodes against the audio every day and fixes their timing (shifts and PAL frame-rate changes), first for free by matching line starts, then with a local speech-to-text service for the unclear cases; cleans adverts and bad timing; finds subtitles for videos that have none through Jellyfin's subtitle providers, adding one only if it fits the audio. Every change can be undone. The built-in speech-to-text and paid services in automatic runs are not in this release yet.",
