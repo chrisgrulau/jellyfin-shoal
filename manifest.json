@@ -6,8 +6,16 @@
     "overview": "Optional, budget-controlled AI help for the Ingest and Subtitles plugins.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.1.0-alpha/assets/shoal-ai.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.2.0-alpha/assets/shoal-ai.png",
     "versions": [
+      {
+        "version": "0.2.0.0",
+        "changelog": "0.2.0-alpha: text in any script reaches the model as written; exchange rates refresh when other plugins ask; clearer failure reasons for Ingest and Subtitles; replies that were billed but unusable are counted in spending; providers not available yet are shown as coming later.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ai/releases/download/v0.2.0-alpha/jellyfin-plugin-ai.zip",
+        "checksum": "864329f984cb583003ae5e0596549524",
+        "timestamp": "2026-09-26T11:02:12Z"
+      },
       {
         "version": "0.1.0.0",
         "changelog": "First release. Claude through the official SDK (default Claude Opus 5.5), metered against overall and per-provider monthly limits in your currency; a Claude prepaid-credit countdown; an in-process entry point so Ingest and Subtitles can ask for help, each only when allowed on this page and only for its own purposes.",
@@ -25,8 +33,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.7.0-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.8.0-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.8.0.0",
+        "changelog": "0.8.0-alpha: dry run per watch folder (on for new folders); a Waiting list with Process now; season and episode per video in review; theme-aware, more accessible settings page.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.8.0-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "66ddef00870fd93f8dfd54c052d9aca2",
+        "timestamp": "2026-09-26T11:03:33Z"
+      },
       {
         "version": "0.7.0.0",
         "changelog": "0.7.0-alpha: hard link or copy per watch folder, so torrents keep seeding (moved stays the default); Ingest remembers what it filed from there. Subtitle language tags in every ISO 639 language are recognised when filing, and unknown tags are kept rather than dropped.",
@@ -116,8 +132,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.9.0-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.10.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.10.0.0",
+        "changelog": "0.10.0-alpha: built-in Whisper checks the system before downloading and gives up on stalled downloads; container- aware local service search; rewritten subtitles keep their file mode; nothing-found is not recorded when no provider answered; results saved in batches; settings that do nothing yet are marked coming later; page errors and accessibility.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.10.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "e96c8f5fa75760b2d510a1c0220e4406",
+        "timestamp": "2026-09-26T11:09:28Z"
+      },
       {
         "version": "0.9.0.0",
         "changelog": "0.9.0-alpha: languages are recognised from a built-in ISO 639 table, so the plugin works on servers without full language data. Subtitle languages accept codes or names (eng, fr, German); entries that aren't languages are noted in the log.",
