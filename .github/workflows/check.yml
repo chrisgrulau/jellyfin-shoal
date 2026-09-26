@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  attestations: read
 
 jobs:
   manifest:
@@ -25,3 +26,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 tools/update_manifest.py --check
+
+      # SHA256SUMS comes from the same release as the zip, so it proves integrity but not origin: every listed zip must
+      # also carry a build attestation signed by its plugin's own build workflow
+      - name: Verify every listed zip's build provenance
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 -c "import json; [print(v['sourceUrl']) for p in json.load(open('manifest.json')) for v in p['versions']]" > zips.txt
+          while read -r url; do
+            repo=$(echo "$url" | cut -d/ -f4-5)
+            curl -sSfL -o plugin.zip "$url"
+            gh attestation verify plugin.zip --repo "$repo" --signer-workflow "$repo/.github/workflows/build.yml" > /dev/null
+            echo "verified: $url"
+          done < zips.txt

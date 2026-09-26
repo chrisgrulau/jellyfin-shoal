@@ -39,7 +39,15 @@ gh attestation verify jellyfin-plugin-ingest.zip --repo chrisgrulau/jellyfin-ing
 ```
 
 The **Check** workflow regenerates the manifest on every change and daily, and fails if `manifest.json` is out of date
-(for example, a plugin has a new release that isn't listed yet).
+(for example, a plugin has a new release that isn't listed yet). It also verifies every listed zip's build attestation
+against its plugin's own build workflow, so each one is known to come from that repository's CI.
+
+## Automatic updates
+
+Jellyfin installs updates from a repository automatically: its **Update Plugins** task runs at start-up and every 24
+hours. These plugins are alpha, so a new version reaches you within a day. To choose when to update instead, open the
+plugin under **Dashboard → Plugins → My Plugins** and switch off automatic updates for it; newer versions are then
+offered under **Catalog** for you to install.
 
 ## Updating
 
