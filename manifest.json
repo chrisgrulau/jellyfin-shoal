@@ -1,5 +1,24 @@
 [
   {
+    "guid": "5f260705-cb7c-4fee-8324-b40202261739",
+    "name": "Shoal AI",
+    "description": "Gives the other plugins in the family optional access to AI models (Anthropic Claude by default; OpenAI, Google and OpenAI-compatible services such as a local server), for decisions they can't make on their own. Nothing uses it until you allow it; spending limits apply overall and per provider, in your own currency.",
+    "overview": "Optional, budget-controlled AI help for the Ingest and Subtitles plugins.",
+    "owner": "chrisgrulau",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.1.0-alpha/assets/shoal-ai.png",
+    "versions": [
+      {
+        "version": "0.1.0.0",
+        "changelog": "First release. Claude through the official SDK (default Claude Opus 5.5), metered against overall and per-provider monthly limits in your currency; a Claude prepaid-credit countdown; an in-process entry point so Ingest and Subtitles can ask for help, each only when allowed on this page and only for its own purposes.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ai/releases/download/v0.1.0-alpha/jellyfin-plugin-ai.zip",
+        "checksum": "428a1b490473fc0969f9c64da07b9752",
+        "timestamp": "2026-09-26T04:40:36Z"
+      }
+    ]
+  },
+  {
     "guid": "88d6ced9-052e-45f6-b21d-fc4eefa7998d",
     "name": "Shoal Ingest",
     "description": "Watches one or more drop folders. New media is identified from its release name and the server's own metadata providers, renamed to Jellyfin's naming standard (with provider IDs) and moved, with its subtitles, into the destination library for its kind. Release clutter is quarantined and purged after a retention period. Anything that can't be identified confidently waits on the plugin page for a decision.",
