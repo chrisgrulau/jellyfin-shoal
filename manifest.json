@@ -49,8 +49,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.11.0-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.12.0-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.12.0.0",
+        "changelog": "0.12.0-alpha: tidier page (what the media is, one plain sentence, icon counts, relative times, details on expand, Show more); generic file names use the release folder; season-only names mean a series; the transcript now runs for unknown episodes; reviews of releases that are gone are removed.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.12.0-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "2ca1ee82f722294da47db7bde9baeb66",
+        "timestamp": "2026-09-27T05:55:55Z"
+      },
       {
         "version": "0.11.0.0",
         "changelog": "0.11.0-alpha: undo a filed release from Recent activity; restore from quarantine and delete now; pause Ingest; new titles go to the library folder with the most free space.",
@@ -172,8 +180,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.15.0-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.16.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.16.0.0",
+        "changelog": "0.16.0-alpha: speech-to-text retries, falls back to a free local service, can be rerun with the chosen service, and flags only lasting problems; checks that can't run yet wait instead of guessing; tidier results page with Show more, icons, plain sentences and nerd stats on expand.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.16.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "0ffdb6858298f48ffd7c12f28c4020f9",
+        "timestamp": "2026-09-27T05:57:30Z"
+      },
       {
         "version": "0.15.0.0",
         "changelog": "0.15.0-alpha: new videos are checked and searched about 10 minutes after they're added; choose which libraries the plugin works on; each library's subtitle languages are the default when the plugin's own setting is empty; Restore all originals before uninstalling.",
