@@ -6,8 +6,16 @@
     "overview": "Optional, budget-controlled AI help for the Ingest and Subtitles plugins.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.5.2-alpha/assets/shoal-ai.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.5.3-alpha/assets/shoal-ai.png",
     "versions": [
+      {
+        "version": "0.5.3.0",
+        "changelog": "0.5.3-alpha: every button that calls the server shows progress while it works, and its outcome next to it.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ai/releases/download/v0.5.3-alpha/jellyfin-plugin-ai.zip",
+        "checksum": "cfd676157e3256e1d96888a63fea33d4",
+        "timestamp": "2026-09-27T10:09:24Z"
+      },
       {
         "version": "0.5.2.0",
         "changelog": "0.5.2-alpha: the settings page always honours hidden elements.",
@@ -73,8 +81,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.12.2-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.13.0-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.13.0.0",
+        "changelog": "0.13.0-alpha: move an automatically filed film or show to another compatible library from Recent activity; Delete now in quarantine can't clash with filing or leave a folder the purge skips; every action button shows progress while it works.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.13.0-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "1a822433309fbbec4af781b54b106db6",
+        "timestamp": "2026-09-27T10:05:59Z"
+      },
       {
         "version": "0.12.2.0",
         "changelog": "0.12.2-alpha: the review card says which title Ingest is using, with Replace existing copies up front and other shows under Wrong show; picking another show re-checks what's already on the server; the paused banner only shows when Ingest is actually paused.",
@@ -220,8 +236,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.16.2-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.16.3-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.16.3.0",
+        "changelog": "0.16.3-alpha: every button that calls the server shows progress while it works, and its outcome next to it.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.16.3-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "5c98c1a51055acc289b5e3211baa1a17",
+        "timestamp": "2026-09-27T10:08:09Z"
+      },
       {
         "version": "0.16.2.0",
         "changelog": "0.16.2-alpha: settings that should be hidden (billing key, download row, some buttons) no longer show when they don't apply.",
