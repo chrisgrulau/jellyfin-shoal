@@ -81,8 +81,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.14.0-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.15.0-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.15.0.0",
+        "changelog": "0.15.0-alpha: filed files are read back through the mount after the rename (and flagged if they can't be); temporary copies are no longer hidden; a film that is already a TV special on the server is offered as that episode.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.15.0-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "dc43c502f90907a7928a5af43e3cb025",
+        "timestamp": "2026-09-27T17:05:10Z"
+      },
       {
         "version": "0.14.0.0",
         "changelog": "0.14.0-alpha: AI suggests, you approve: per watch folder, releases whose identity the AI decided can wait for one- click approval (or Approve all) instead of being filed automatically.",
