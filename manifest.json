@@ -6,8 +6,16 @@
     "overview": "Optional, budget-controlled AI help for the Ingest and Subtitles plugins.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.3.0-alpha/assets/shoal-ai.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.4.0-alpha/assets/shoal-ai.png",
     "versions": [
+      {
+        "version": "0.4.0.0",
+        "changelog": "0.4.0-alpha: a log of recent AI calls (caller, purpose, model, outcome, cost, duration; never what was sent) and the last error on the settings page.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ai/releases/download/v0.4.0-alpha/jellyfin-plugin-ai.zip",
+        "checksum": "0049e766c3b073d747b36a03d08d6a86",
+        "timestamp": "2026-09-26T15:48:54Z"
+      },
       {
         "version": "0.3.0.0",
         "changelog": "0.3.0-alpha: paid calls and spending use the shared metering and spending store; unsupported currency codes read as USD; the currency list comes from the server.",
