@@ -236,8 +236,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.16.3-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.17.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.17.0.0",
+        "changelog": "0.17.0-alpha: act on many results at once (tick boxes, select all matching, Apply/Decline/Undo/Check again in the background with progress); the whole-file check tuned on real videos: far fewer lines flagged that aren't wrong.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.17.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "8774b91cc3d2927ecb1a74dee2f99f22",
+        "timestamp": "2026-09-27T11:29:13Z"
+      },
       {
         "version": "0.16.3.0",
         "changelog": "0.16.3-alpha: every button that calls the server shows progress while it works, and its outcome next to it.",
