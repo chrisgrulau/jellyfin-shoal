@@ -6,8 +6,16 @@
     "overview": "Optional, budget-controlled AI help for the Ingest and Subtitles plugins.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.5.0-alpha/assets/shoal-ai.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.5.1-alpha/assets/shoal-ai.png",
     "versions": [
+      {
+        "version": "0.5.1.0",
+        "changelog": "0.5.1-alpha: the settings page uses the full width with centred buttons.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ai/releases/download/v0.5.1-alpha/jellyfin-plugin-ai.zip",
+        "checksum": "36b4a7f82e8d7382dbc54534c1c6db38",
+        "timestamp": "2026-09-27T07:12:56Z"
+      },
       {
         "version": "0.5.0.0",
         "changelog": "0.5.0-alpha: one budget page for every Shoal service: Subtitles' paid speech-to-text (Deepgram, OpenAI) is kept within the currency and limits set here; a tidier settings page; the call log pages 15 at a time with plain headlines, icons, relative times and details on expand.",
@@ -57,8 +65,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.12.0-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.12.1-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.12.1.0",
+        "changelog": "0.12.1-alpha: the settings page uses the full width with centred buttons; summaries no longer add a full stop after a question mark.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.12.1-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "e160636d8ce5017c12bc269a5fbf9bba",
+        "timestamp": "2026-09-27T07:10:04Z"
+      },
       {
         "version": "0.12.0.0",
         "changelog": "0.12.0-alpha: tidier page (what the media is, one plain sentence, icon counts, relative times, details on expand, Show more); generic file names use the release folder; season-only names mean a series; the transcript now runs for unknown episodes; reviews of releases that are gone are removed.",
@@ -188,8 +204,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.16.0-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.16.1-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.16.1.0",
+        "changelog": "0.16.1-alpha: the settings and results page uses the full width with centred buttons.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.16.1-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "eaa3ebfe9c921e0c9d281a93880afee8",
+        "timestamp": "2026-09-27T07:11:46Z"
+      },
       {
         "version": "0.16.0.0",
         "changelog": "0.16.0-alpha: speech-to-text retries, falls back to a free local service, can be rerun with the chosen service, and flags only lasting problems; checks that can't run yet wait instead of guessing; tidier results page with Show more, icons, plain sentences and nerd stats on expand.",
