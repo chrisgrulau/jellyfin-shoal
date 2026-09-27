@@ -6,8 +6,16 @@
     "overview": "Optional, budget-controlled AI help for the Ingest and Subtitles plugins.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.5.1-alpha/assets/shoal-ai.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.5.2-alpha/assets/shoal-ai.png",
     "versions": [
+      {
+        "version": "0.5.2.0",
+        "changelog": "0.5.2-alpha: the settings page always honours hidden elements.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ai/releases/download/v0.5.2-alpha/jellyfin-plugin-ai.zip",
+        "checksum": "c9b9f51aa84f364ae2d1f1af60e47945",
+        "timestamp": "2026-09-27T09:24:10Z"
+      },
       {
         "version": "0.5.1.0",
         "changelog": "0.5.1-alpha: the settings page uses the full width with centred buttons.",
@@ -65,8 +73,16 @@
     "overview": "Watch drop folders and file new media into your libraries, correctly named.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.12.1-alpha/assets/shoal-ingest.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ingest/v0.12.2-alpha/assets/shoal-ingest.png",
     "versions": [
+      {
+        "version": "0.12.2.0",
+        "changelog": "0.12.2-alpha: the review card says which title Ingest is using, with Replace existing copies up front and other shows under Wrong show; picking another show re-checks what's already on the server; the paused banner only shows when Ingest is actually paused.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ingest/releases/download/v0.12.2-alpha/jellyfin-plugin-ingest.zip",
+        "checksum": "9f59ac86a984787819d464707c6a44ee",
+        "timestamp": "2026-09-27T09:20:19Z"
+      },
       {
         "version": "0.12.1.0",
         "changelog": "0.12.1-alpha: the settings page uses the full width with centred buttons; summaries no longer add a full stop after a question mark.",
@@ -204,8 +220,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.16.1-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.16.2-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.16.2.0",
+        "changelog": "0.16.2-alpha: settings that should be hidden (billing key, download row, some buttons) no longer show when they don't apply.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.16.2-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "ea9e9db6a8eca117c3148fe235b5e0a3",
+        "timestamp": "2026-09-27T09:22:18Z"
+      },
       {
         "version": "0.16.1.0",
         "changelog": "0.16.1-alpha: the settings and results page uses the full width with centred buttons.",
