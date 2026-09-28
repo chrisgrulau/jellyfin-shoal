@@ -2,12 +2,20 @@
   {
     "guid": "5f260705-cb7c-4fee-8324-b40202261739",
     "name": "Shoal AI",
-    "description": "Gives the other plugins in the family optional access to AI models (Anthropic Claude by default; OpenAI, Google and OpenAI-compatible services such as a local server), for decisions they can't make on their own. Nothing uses it until you allow it; spending limits apply overall and per provider, in your own currency.",
+    "description": "Gives the other plugins in the family optional access to AI models (Anthropic Claude by default; OpenAI, Google Gemini and OpenAI-compatible services such as a local Ollama server, OpenRouter or Groq), for decisions they can't make on their own. Nothing uses it until you allow it; spending limits apply overall and per provider, in your own currency.",
     "overview": "Optional, budget-controlled AI help for the Ingest and Subtitles plugins.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.5.3-alpha/assets/shoal-ai.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-ai/v0.6.0-alpha/assets/shoal-ai.png",
     "versions": [
+      {
+        "version": "0.6.0.0",
+        "changelog": "0.6.0-alpha: OpenAI, Google Gemini and OpenAI-compatible services (Ollama, OpenRouter, Groq, local servers) alongside Claude, with a default provider and fallbacks, per-provider budgets, newest-model choice and health banners.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-ai/releases/download/v0.6.0-alpha/jellyfin-plugin-ai.zip",
+        "checksum": "bb94a715d73a5fc0d36cbc69c62b6824",
+        "timestamp": "2026-09-28T04:11:09Z"
+      },
       {
         "version": "0.5.3.0",
         "changelog": "0.5.3-alpha: every button that calls the server shows progress while it works, and its outcome next to it.",
@@ -252,8 +260,16 @@
     "overview": "Find, check and synchronise subtitles so they match the audio.",
     "owner": "chrisgrulau",
     "category": "General",
-    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.18.1-alpha/assets/shoal-subtitles.png",
+    "imageUrl": "https://raw.githubusercontent.com/chrisgrulau/jellyfin-subtitles/v0.19.0-alpha/assets/shoal-subtitles.png",
     "versions": [
+      {
+        "version": "0.19.0.0",
+        "changelog": "0.19.0-alpha: every subtitle language the audio is in is found, synced, checked and generated in that language; subtitles in another language are left alone; built-in speech-to-text build 2 is a smaller download.",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/chrisgrulau/jellyfin-subtitles/releases/download/v0.19.0-alpha/jellyfin-plugin-subtitles.zip",
+        "checksum": "aea6c93e5102e9efb2056d77507db676",
+        "timestamp": "2026-09-28T04:13:08Z"
+      },
       {
         "version": "0.18.1.0",
         "changelog": "0.18.1-alpha: results no longer say applied or declined changes are waiting for review; a bulk action that can't apply says why.",
